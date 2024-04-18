@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MQTest2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+	<servlet-name>MQTest2</servlet-name>
+	<servlet-class>MQTest2</servlet-class>
+	<init-param><param-name>MQServerIP</param-name> <param-value>192.168.200.130</param-value></init-param>
+  	<init-param><param-name>MQRequest</param-name> <param-value>GPTREQUEST</param-value></init-param>
+  	<init-param><param-name>MQResponse</param-name> <param-value>GPTRESPCHG</param-value></init-param>
+	<init-param><param-name>MQUser</param-name> <param-value>testuser</param-value></init-param>
+	<init-param><param-name>MQPassword</param-name> <param-value>testuser</param-value></init-param>
+	<init-param><param-name>MQServerID</param-name> <param-value>01</param-value></init-param>
+  </servlet>
+</web-app>
